@@ -27,7 +27,9 @@
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
-	<script src="contactform/contactform.js"></script>
+	<script>
+		
+	</script>
 
 </head>
 
@@ -56,7 +58,7 @@
 				<li class="small-logo"><a href="#header"><img src="img/pequenalogo.jpg" alt=""></a></li>
 				<li><a href="#team">Alcateia</a></li>
 				<li><a href="#contato">Contato</a></li>
-				<li><a href="#forum.html">Blog</a></li>
+				<li><a href="https://blog.codingwolves.com/" target="_blank">Blog</a></li>
 				
 				
 			</ul>
@@ -251,10 +253,10 @@
 						<span><strong>Segunda a Sexta:</strong> Das 9:00 às 12:00 - 14:00 às 18:00<br><strong> Sábado:</strong> Somente sob horário marcado.</span>
 					</div>
 					<ul class="social-link">
-						<li class="twitter"><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li class="pinterest"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-						<li class="gplus"><a href="#"><i class="fa fa-github"></i></a></li>
+						<li class="twitter"><a href="https://www.instagram.com/coding.wolves/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li class="facebook"><a href="https://fb.me/codingwolves/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li class="pinterest"><a href="https://www.youtube.com/channel/UCnOCFqZwY3UtphSq98asQrg/featured?disable_polymer=1" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+						<li class="gplus"><a href="https://github.com/Coding-Wolves" target="_blank" ><i class="fa fa-github"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
@@ -262,21 +264,21 @@
 
 						<div id="sendmessage">Sua mensagem foi enviada, muito obrigado!</div>
 						<div id="errormessage">Sua mensagem não foi enviada, tente novamente!</div>
-						<form action="" method="post" role="form" class="contactForm">
+						<form action="contato.php" method="post" id="fContato" role="form" class="contactForm">
 							<div class="form-group">
-								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<input type="text" name="nome" class="form-control input-text" id="nome" placeholder="Seu nome" data-rule="minlen:4" data-msg="Digite o seu nome" />
 								<div class="validation"></div>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control input-text" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
+								<input type="email" class="form-control input-text" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Digite seu e-mail" />
 								<div class="validation"></div>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<input type="text" class="form-control input-text" name="assunto" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite o assunto por favor" />
 								<div class="validation"></div>
 							</div>
 							<div class="form-group">
-								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensagem"></textarea>
+								<textarea class="form-control input-text text-area" name="mensagem" rows="6" data-rule="required" data-msg="Por favor escreva algo para nos" placeholder="Mensagem"></textarea>
 								<div class="validation"></div>
 							</div>
 							<div class="text-center"><button type="submit" class="input-btn">Enviar mensagem</button></div>
